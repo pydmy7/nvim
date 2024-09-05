@@ -2,10 +2,12 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
-if vim.fn.executable('pwsh') == 1 then
-    vim.o.shell = 'pwsh'
-else
-    vim.o.shell = 'powershell'
+if vim.loop.os_uname().sysname:find("Windows") ~= nil then
+    if vim.fn.executable('pwsh') == 1 then
+        vim.o.shell = 'pwsh'
+    else
+        vim.o.shell = 'powershell'
+    end
 end
 
 vim.g.autoformat = false
