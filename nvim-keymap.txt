@@ -1,0 +1,19 @@
+:vs :sv 分割窗口
+ctrl+hjkl 窗口之间切换
+<leader>wd 删除窗口
+ctrl+↑↓←→ 改变窗口高度
+
+<leader><tab><tab> 新标签页
+shift+hl 切换buffer
+<leader>bd 删除buffer
+
+<leader>/ 全局搜索字符串
+<leader>ff 全局搜索文件名
+
+\\\ 添加光标
+ctrl+n 选择一个块
+\\A 选择所有块
+
+alt+jk 选中部分上下移动
+
+ctrl+/   打开/关闭terminal
