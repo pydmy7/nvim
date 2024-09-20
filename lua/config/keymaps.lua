@@ -2,6 +2,10 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+
+vim.keymap.del({ "n", "v", "o" }, "s")
+
+
 -- 在 LazyVim 的配置文件中加入以下内容
 -- 窗口切换时循环逻辑
 local function smart_window_nav(dir)
@@ -26,4 +30,11 @@ vim.keymap.set("n", "<C-h>", function() smart_window_nav("h") end, { desc = "循
 vim.keymap.set("n", "<C-j>", function() smart_window_nav("j") end, { desc = "循环切换到下边窗口" })
 vim.keymap.set("n", "<C-k>", function() smart_window_nav("k") end, { desc = "循环切换到上边窗口" })
 vim.keymap.set("n", "<C-l>", function() smart_window_nav("l") end, { desc = "循环切换到右边窗口" })
+
+
+-- 禁用方向键（普通模式和插入模式）
+vim.keymap.set({ 'n', 'i', 'v' }, '<Up>', '<Nop>', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'i', 'v' }, '<Down>', '<Nop>', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'i', 'v' }, '<Left>', '<Nop>', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'i', 'v' }, '<Right>', '<Nop>', { noremap = true, silent = true })
 

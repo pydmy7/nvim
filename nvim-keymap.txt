@@ -1,0 +1,50 @@
+1. Window
+:vs :sv 分割窗口
+ctrl-hjkl 窗口之间切换
+<leader>wd 删除窗口
+
+2. Buffer
+<leader><tab><tab> 新标签页
+shift-hl 切换buffer
+<leader>bd 删除buffer
+
+3. Find
+<leader>/ 全局搜索字符串
+<leader>ff 全局搜索文件名
+
+4. Cursor
+\\\ 添加光标
+ctrl-n 选择一个块
+\\A 选择所有块
+
+5. Code
+<leader>ca Code Action
+gd 转到定义 n
+K 悬停 n
+
+6. Motion
+hjkl
+w/b/e 单词
+W/B/E 词组
+{}
+alt-jk 选中部分上下移动
+
+7. Operator
+i/a/o
+I/A/O
+y/d/c
+yy/dd/cc
+x/p/s
+viw/ciw/diw/yiw
+w 可以替换为配对符号 {[(<"'`
+
+ctrl-e/y 视图上/下滚动一行
+ctrl-u 输入模式下删除一整行
+`` 跳转到光标上次所在的位置
+gi 跳转到光标上次编辑的位置
+ctrl-/ 打开/关闭terminal
+
+ctrl-v j/k
+I/A/C/c/D/d/X/x/s/y/p
+
+/`xxx` -> enter -> cw`yyy`<ecs> -> n. -> nnn.
