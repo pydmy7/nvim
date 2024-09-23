@@ -31,10 +31,9 @@ vim.keymap.set("n", "<C-j>", function() smart_window_nav("j") end, { desc = "循
 vim.keymap.set("n", "<C-k>", function() smart_window_nav("k") end, { desc = "循环切换到上边窗口" })
 vim.keymap.set("n", "<C-l>", function() smart_window_nav("l") end, { desc = "循环切换到右边窗口" })
 
-
--- 禁用方向键（普通模式和插入模式）
-vim.keymap.set({ 'n', 'i', 'v' }, '<Up>', '<Nop>', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'i', 'v' }, '<Down>', '<Nop>', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'i', 'v' }, '<Left>', '<Nop>', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'i', 'v' }, '<Right>', '<Nop>', { noremap = true, silent = true })
+-- 仅在普通模式和可视模式下禁用方向键
+vim.keymap.set({ 'n', 'v' }, '<Up>', '<Nop>', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'v' }, '<Down>', '<Nop>', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'v' }, '<Left>', '<Nop>', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'v' }, '<Right>', '<Nop>', { noremap = true, silent = true })
 
