@@ -1,4 +1,6 @@
 if vim.g.vscode then
+    require("user.keymaps")
+    require("user.options")
     return
 end
 
