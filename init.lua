@@ -1,6 +1,7 @@
 if vim.g.vscode then
     require("user.keymaps")
     require("user.options")
+    require("user.autocmds")
     return
 end
 
