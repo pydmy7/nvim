@@ -4,9 +4,9 @@
 
 LazyVim.terminal.setup("pwsh")
 
-vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
-
 vim.g.autoformat = false
+
+vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
 
 vim.opt.backup = false
 
@@ -43,3 +43,5 @@ vim.opt.cursorline = true
 vim.opt.mouse = "a"
 
 vim.opt.hidden = true
+
+vim.opt.wrap = true
