@@ -36,8 +36,6 @@ vim.opt.updatetime = 200
 
 vim.opt.termguicolors = true
 
-vim.opt.wrap = false
-
 vim.opt.cursorline = true
 
 vim.opt.mouse = "a"
