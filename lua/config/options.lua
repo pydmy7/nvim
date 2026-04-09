@@ -43,3 +43,5 @@ vim.opt.mouse = "a"
 vim.opt.hidden = true
 
 vim.opt.wrap = true
+
+vim.opt.background = "dark"
