@@ -50,8 +50,8 @@ map("i", ".", ".<c-g>u")
 map("i", ";", ";<c-g>u")
 
 -- better indenting
-map("v", "<", "<gv")
-map("v", ">", ">gv")
+map("x", "<", "<gv")
+map("x", ">", ">gv")
 
 -- paste without overriding register
 map("x", "p", '"_dP')
