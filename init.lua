@@ -6,7 +6,7 @@ if vim.g.vscode then
 end
 
 if vim.g.neovide then
-    vim.o.guifont = "JetBrainsMono Nerd Font Mono"
+    vim.o.guifont = "JetBrainsMono Nerd Font"
 end
 
 -- bootstrap lazy.nvim, LazyVim and your plugins
