@@ -8,6 +8,8 @@ vim.g.lazyvim_python_lsp = "pyright"
 -- Set to "ruff_lsp" to use the old LSP implementation version.
 vim.g.lazyvim_python_ruff = "ruff"
 
-LazyVim.terminal.setup("pwsh")
+if vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1 then
+    LazyVim.terminal.setup("pwsh")
+end
 
 require("user.options")
